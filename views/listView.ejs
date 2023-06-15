@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>List</title>
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+<body>
+  <main>
+    <nav>
+      <ul>
+        <li><a href="/">&lt; Back</a></li>
+      </ul>
+    </nav>
+
+    <h1>Here's what I've learned:</h1>
+
+    <ul>
+      <% skillList.forEach(function(s) { %>
+        <li>
+          <form action="/skills/<%=s.id%>?_method=DELETE"
+            class="delete-form" method="POST">
+            <button type="submit">X</button>
+          </form>
+          <a href="/skills/<%= s.id %>">
+            <%= s.name %> 
+          </a>
+        </li>
+      <% }); %>
+      <a href="/skills/new">Want to add another skill? Click me!</a>
+      <% skillList.forEach(function(s) { %>
+      <% }); %>
+  </ul>
+  </main>
+</body>
+</html>

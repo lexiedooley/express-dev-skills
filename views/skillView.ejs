@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><% skill.name %></title>
+  <link rel="stylesheet" href= '/stylesheets/style.css' />
+</head>
+<body>
+  <main>
+    <nav>
+      <ul>
+        <li><a href="/skills">&lt; Back</a></li>
+      </ul>
+    </nav>
+
+    <hgroup>
+      <h1><%= skill.name %></h1>
+      <h2>How difficult was this for me?: <strong><%= skill.difficulty %></strong> </h2>
+        <br>
+      <h2>How much did I enjoy this language?: <small><%= skill.enjoyment %></small></h2>
+    </hgroup>
+  </main>
+</body>
+</html>

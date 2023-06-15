@@ -4,5 +4,20 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: black;
+}
+.delete-form {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.delete-form button {
+  color:blueviolet;
+}
+li {
+  list-style: none;
+}
+body {
+  background-color: #E5B2FE;
+  color: black;
 }
